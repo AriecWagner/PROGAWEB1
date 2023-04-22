@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="interface">
+        <span id="pointer"></span>
+        <div class="moreClass">
+            <span id="more">
+                <div class="BarierButtonClass">
+                    <button id="BarierButton">Барьер</button>
+                </div>
+                <div class="StartButtonClass">
+                    <button id="StartButton">База</button>
+                </div>
+                <div class="FinishButtonClass">
+                    <button id="FinishButton">Еда</button>
+                </div>
+                <div class="StartAllButtonClass">
+                    <button id="StartAllButton">Начать</button>
+                </div>
+                <div class="EraserClass">
+                    <button id="Eraser">Ластик</button>
+                </div>
+                <div class="BackClass">
+                    <button id="Back" onclick="location.href='../MainIndex.html'">Назад</button>
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="1000" value="500" class="slider" id="SliderId">
+                </div>
+                <div class="custom-select">
+                    <select id="SelectId">
+                      <option value="0">Размер кисти</option>
+                      <option value="1">Число муравьёв</option>
+                      <option value="2">Масштаб</option>
+                    </select>
+                  </div>
+                <div class="ValueClass" id="ValueId"></div>
+            </span>
+        </div>
+        <div class="btnClass">
+            <button id="btn" onclick="readMore()">Подробнее</button>
+        </div>
+    </div>
+
+    <div id="indicator" class="isWrite"></div>
+    <canvas id="canvas"></canvas>
+    <script src="AntAlgorithmScript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="AntAlgorithmStyle.css">
+</body>
+</html>

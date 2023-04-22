@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="disp">
+        <button id="StartWay">Проложить маршрут</button>
+        <button id="Regenarate">Сгенерировать лабиринт заново</button>
+        <button id="Back" onclick="location.href='../MainIndex.html'">Назад</button>
+        <input type="text" id="valueNow" value="20" />
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="500" class="slider" id="speed">
+        </div>
+        <button id="AddWall">Добавить стенку</button>
+        <button id="DestroyWall">Убрать стенку</button>
+        <p id="textForSpeed">Изменение скорости</p>
+        <button id="Accept">Изменить размер</button>
+        <canvas></canvas>
+    </div>
+    <link rel="stylesheet" type="text/css" href="MazeStyle.css">
+    <script src="MazeScript.js"></script>
+</body>
+</html>
